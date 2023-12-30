@@ -1,0 +1,41 @@
+/*Estilos para la seccion de carrucel de fotos*/
+section {
+    display: flex; /* Cambiado a 100% para ocupar todo el ancho */
+    height: 430px; /* Ajusta según tus necesidades */
+    overflow: hidden; /* Evita que las imágenes se salgan de la sección */
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 20%; /* Ajusta según tus necesidades */
+    opacity: 1;
+    filter: contrast(120%);
+}
+/*hola*/
+/* Estilo para la nueva sección de descripción */
+.description-section {
+    display: flex;
+    background-color: black;
+    color: #ffffff;
+    height: 200px;
+}
+
+.description-content {
+    padding: 20px;
+    flex-grow: 1; /* Permite que este contenedor crezca y ocupe el espacio disponible */
+}
+
+.description-content p {
+    margin-right: 20px; /* Añade un margen a la derecha del párrafo */
+}
+
+
+

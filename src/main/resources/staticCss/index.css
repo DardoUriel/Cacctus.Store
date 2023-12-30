@@ -1,0 +1,35 @@
+section {
+    display: flex; /* Cambiado a 100% para ocupar todo el ancho */
+    height: 430px; /* Ajusta según tus necesidades */
+    overflow: hidden; /* Evita que las imágenes se salgan de la sección */
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 20%; /* Ajusta según tus necesidades */
+    opacity: 1;
+    filter: contrast(120%);
+}
+.description-section {
+    display: flex;
+    background-color: black;
+    color: white; /* Cambiado a blanco para el texto */
+    padding: 20px; /* Agregado espacio alrededor del contenido */
+}
+
+.description-content  p{
+    flex-grow: 1; /* Para que ocupe todo el espacio disponible */
+    color: white; 
+}
+
+.image-container img {
+    max-height: 100%; /* Ajusta según tus necesidades */
+}
